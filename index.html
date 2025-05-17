@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="/js/data.js"></script>
+  <script defer src="/js/index.js"></script>
+  
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <div class="grille">
+<header class ="header">
+<div class="header-div">
+  <figure><img src="images/image-jeremy.png" alt=""></figure>
+  <p>Report for</p>
+  <h1>Jeremy Robson</h1>
+</div>
+<nav class="nav" aria-label="Choix de période">
+  <div class="bouton">
+    <input type="radio" id="daily" name="periode" value="daily" checked>
+    <label for="daily">Daily</label>
+  </div>
+
+  <div class="bouton">
+    <input type="radio" id="weekly" name="periode" value="weekly">
+    <label for="weekly">Weekly</label>
+  </div>
+
+  <div class="bouton">
+    <input type="radio" id="monthly" name="periode" value="monthly">
+    <label for="monthly">Monthly</label>
+  </div>
+</nav>
+</header>
+<section class="section work">
+<picture><img src="images/icon-work.svg" alt=""> </picture>
+  <div class="carte">
+  <h2 class="nom_section">Work</h2>
+  <p><span id="temps_actuel_work">5</span> hrs</p> 
+  <p> Previous - <span id="temps_precedent_work">7</span> hrs</p> 
+</div>
+</section>
+<section class="section play">
+  <picture><img src="images/icon-play.svg" alt=""> </picture>
+  <div class="carte">
+  <h2 class="nom_section"> Play</h2>
+  <p><span id="temps_actuel_play">2</span> hrs</p>
+  <p>Previous - <span id="temps_precedent_play">10</span> hrs </p>
+  </div>
+</section>
+<section class="section study">
+  <picture><img src="images/icon-study.svg" alt=""> </picture>
+  <div class="carte">
+  <h2 class="nom_section"> Play</h2>
+  <p><span id="temps_actuel_study">1</span> hrs</p>
+  <p> Previous - <span id="temps_precedent_study">4</span> hrs</p> 
+  </div>
+</section>
+<section class="section exercise">
+  <picture><img src="images/icon-exercise.svg" alt=""> </picture>
+  <div class="carte">
+  <h2 class="nom_section">Exercise </h2>
+  <p><span id="temps_actuel_exercise">1</span> hrs</p>
+  <p> Previous - <span id="temps_precedent_exercise">1</span> hrs</p> 
+  </div>
+</section>
+<section class="section social">
+  <picture><img src="images/icon-social.svg" alt=""> </picture>
+  <div class="carte">
+  <h2 class="nom_section"> Social </h2>
+  <p><span id="temps_actuel_social">1</span> hrs</p>
+  <p> Previous - <span id="temps_precedent_social">3</span> hrs</p> 
+  </div>
+</section>
+<section class="section self_care">
+  <picture><img src="images/icon-self-care.svg" alt=""> </picture>
+  <div class="carte">
+  <h2 class="nom_section"> Self Care</h2>
+  <p><span id="temps_actuel_self_care">0</span> hrs</p>
+  <p> Previous - <span id="temps_precedent_self_care">1</span> hrs</p> 
+  </div>
+</section>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yannick Blanchet
+    </a>
+  </div>
+</body>
+</html>
